@@ -1,0 +1,20 @@
+# Train\\val\\test sets as 1) dir: path\\to\\imgs, 2) file: path\\to\\imgs.txt, or 3) list: [path\\to\\imgs1, path\\to\\imgs2, ..]
+path: /blue/eel5840/justin.rossiter  # dataset root dir
+train: train/images  # train images (relative to 'path') 128 images
+val: test/images  # val images (relative to 'path') 128 images
+test:  # test images (optional)
+
+# Classes
+names:
+  0: x
+  1: square root
+  2: plus sign
+  3: negative sign
+  4: equal
+  5: percent
+  6: partial
+  7: product
+  8: pi
+  9: summation
+  10: other
+ 
