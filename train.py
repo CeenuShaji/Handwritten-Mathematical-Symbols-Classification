@@ -15,7 +15,7 @@ plt.ion()   # interactive mode
 def generateImageAndLabel(split, i, idx):
     image = Image.fromarray(dataset[:, :, idx], mode = 'L').resize((320, 320))
     image.save(os.path.join(preceding_path, split, "images", str(i) + "_" + str(idx) + ".jpg"))
-    with open(os.path.join(preceding_path, split, "labels", str(i) + "_" + str(idx) + ".txt", "w")) as f:
+    with open(os.path.join(preceding_path, split, "labels", str(i) + "_" + str(idx) + ".txt"), "w") as f:
         f.write(str(i) + " 0.5 0.5 1 1")
 
 if __name__ == "__main__":
