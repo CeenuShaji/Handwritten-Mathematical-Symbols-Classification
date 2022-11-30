@@ -1,6 +1,5 @@
 from __future__ import print_function, division
 
-import torch.backends.cudnn as cudnn
 import numpy as np
 import matplotlib.pyplot as plt
 import os
@@ -10,7 +9,6 @@ import shutil
 
 preceding_path = "/blue/eel5840/justin.rossiter"
 
-cudnn.benchmark = True
 plt.ion()   # interactive mode
 #https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html
 
