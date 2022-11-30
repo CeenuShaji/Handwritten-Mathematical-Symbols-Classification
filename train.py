@@ -1,23 +1,12 @@
 from __future__ import print_function, division
 
-import torch
-import torch.nn as nn
-import torch.optim as optim
-from torch.optim import lr_scheduler
 import torch.backends.cudnn as cudnn
 import numpy as np
-import torchvision
-from torchvision import datasets, models, transforms
 import matplotlib.pyplot as plt
-import time
 import os
-import copy
-from torch.utils.data import DataLoader, TensorDataset, Subset, Dataset
-from sklearn.model_selection import train_test_split, KFold
+from sklearn.model_selection import train_test_split
 from PIL import Image
 import shutil
-import pandas
-from torchvision.io import read_image
 
 preceding_path = "/blue/eel5840/justin.rossiter"
 
@@ -56,7 +45,8 @@ if __name__ == "__main__":
                 generateImageAndLabel("test", i, idx)
                 
     for idx in np.where(labels == -1)[0]:
-        generateImageAndLabel("train", 10, idx)
-    for idx in np.where(labels == -1)[0]:
-        generateImageAndLabel("test", 10, idx)
+        if idx in train_indices:
+            generateImageAndLabel("train", 10, idx)
+        else:
+            generateImageAndLabel("test", 10, idx)
 
