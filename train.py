@@ -55,8 +55,8 @@ if __name__ == "__main__":
             else:
                 generateImageAndLabel("test", i, idx)
                 
-    for idx in np.where(labels[train_indices] == -1)[0]:
+    for idx in np.where(labels == -1)[0]:
         generateImageAndLabel("train", 10, idx)
-    for idx in np.where(labels[test_indices] == -1)[0]:
+    for idx in np.where(labels == -1)[0]:
         generateImageAndLabel("test", 10, idx)
 
