@@ -24,8 +24,8 @@ if __name__ == "__main__":
 
     test_size = 0.25
 
-    dataset = np.load('data_train.npy').reshape((300, 300, 9032))
-    labels = np.load('t_train_corrected.npy')
+    dataset = np.load(os.path.join(preceding_path, 'data_train.npy')).reshape((300, 300, 9032))
+    labels = np.load(os.path.join(preceding_path, 't_train_corrected.npy'))
     if os.path.exists(os.path.join(preceding_path, "train")):
         shutil.rmtree(os.path.join(preceding_path, "train"))
     if os.path.exists(os.path.join(preceding_path, "test")):
