@@ -39,31 +39,32 @@ def generateImageAndLabel(split, i, idx):
 
 if __name__ == "__main__":
 
-    test_size = 0.25
+    test_size = 0.2
 
     dataset = np.load(os.path.join(preceding_path, 'data_train.npy')).reshape((300, 300, 9032))
     labels = np.load(os.path.join(preceding_path, 't_train_corrected.npy'))
     if os.path.exists(os.path.join(preceding_path, "train")):
         shutil.rmtree(os.path.join(preceding_path, "train"))
-    if os.path.exists(os.path.join(preceding_path, "test")):
-        shutil.rmtree(os.path.join(preceding_path, "test"))
+    if os.path.exists(os.path.join(preceding_path, "val")):
+        shutil.rmtree(os.path.join(preceding_path, "val"))
     os.makedirs(os.path.join(preceding_path, "train", "images"))
     os.makedirs(os.path.join(preceding_path, "train", "labels"))
-    os.makedirs(os.path.join(preceding_path, "test", "images"))
-    os.makedirs(os.path.join(preceding_path, "test", "labels"))
+    os.makedirs(os.path.join(preceding_path, "val", "images"))
+    os.makedirs(os.path.join(preceding_path, "val", "labels"))
 
-    train_indices, test_indices = train_test_split(range(9032), test_size=test_size, shuffle=False)
+    train_indices2, test_indices = train_test_split(range(9032), test_size=test_size, shuffle=False)
+    train_indices, val_indices = train_test_split(train_indices, test_size=test_size, shuffle=False)
 
     for i in range(10):
         for idx in np.where(labels == i)[0]:
             if idx in train_indices:
                 generateImageAndLabel("train", i, idx)
             else:
-                generateImageAndLabel("test", i, idx)
+                generateImageAndLabel("val", i, idx)
                 
     for idx in np.where(labels == -1)[0]:
         if idx in train_indices:
             generateImageAndLabel("train", 10, idx)
         else:
-            generateImageAndLabel("test", 10, idx)
+            generateImageAndLabel("val", 10, idx)
 
