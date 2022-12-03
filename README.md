@@ -31,15 +31,15 @@ The YOLOv5 repository needs to be cloned in order for the model to run.
 
 ### Dependencies
 Here are the different libraries and dependencies that need to be installed to run this project. 
--PyTorch
--Pandas
--NumPy
--Pillow
--Matplotlib
--Scikit-learn
--Scikit-image
+- PyTorch
+- Pandas
+- NumPy
+- Pillow
+- Matplotlib
+- Scikit-learn
+- Scikit-image
 
-YOLOv5
+- YOLOv5
 
 ## Usage
 
