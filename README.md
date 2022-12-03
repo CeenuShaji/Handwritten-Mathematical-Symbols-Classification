@@ -24,3 +24,33 @@ Please edit this read-me file with information about your project. You can find 
 ## About The Project
 
 This is a group project for Fundamentals of Machine Learning class in which we were tasked with developing a machine learning system to classify handwritten mathematical symbols. The dataset used for this project was collected by each student enrolled in this course and contains a variety of 10 symbols. 
+
+## Getting Started
+
+The YOLOv5 repository needs to be cloned in order for the model to run. 
+
+### Dependencies
+Here are the different libraries and dependencies that need to be installed to run this project. 
+-PyTorch
+-Pandas
+-NumPy
+-Pillow
+-Matplotlib
+-Scikit-learn
+-Scikit-image
+
+YOLOv5
+
+## Usage
+
+## Roadmap
+
+## Contributing
+
+## License
+
+## Authors
+
+## Acknowledgements
+
+## Thank You
