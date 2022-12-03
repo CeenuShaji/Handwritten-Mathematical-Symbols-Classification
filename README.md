@@ -20,3 +20,7 @@ You can download the training data from the Canvas page:
 ## Edit this READ-ME
 
 Please edit this read-me file with information about your project. You can find a [READ-ME template here](https://github.com/catiaspsilva/README-template).
+
+## About The Project
+
+This is a group project for Fundamentals of Machine Learning class in which we were tasked with developing a machine learning system to classify handwritten mathematical symbols. The dataset used for this project was collected by each student enrolled in this course and contains a variety of 10 symbols. 
