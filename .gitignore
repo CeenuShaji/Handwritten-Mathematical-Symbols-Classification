@@ -1,6 +1,8 @@
 
 t_train.npy
+t_test.npy
 data_train.npy
+data_test.npy
 images/*
 labels/*
 Multi2/*
