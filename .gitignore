@@ -3,3 +3,4 @@ t_train.npy
 data_train.npy
 images/*
 labels/*
+Multi2/*
