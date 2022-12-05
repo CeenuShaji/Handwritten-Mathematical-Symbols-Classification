@@ -71,7 +71,7 @@ pip install scikit-image
 ```
 git clone https://github.com/UF-EEL5840-F22/final-project---code-report-team-square-root.git
 ```
-3. Setup your environment
+2. Setup your environment
 ## Usage
 
 ## Roadmap
