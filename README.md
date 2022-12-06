@@ -1,7 +1,5 @@
 # Final Project
 
-This is a **group assignment**.
-
 ## Code Implementation & Technical Report
 
 The final deliverables include a 4-page IEEE-format report, code implementation and a detailed GitHub readme file.
@@ -82,21 +80,26 @@ git clone https://github.com/ultralytics/yolov5
 7. When training is finished, the model can be found within yolov5/runs/train/exp#/weights, where # is the run number. Copy the trained model to the final project repository, or set the path within test.ipynb to account for this.
 8. Run test.ipynb to evaluate the model on the generated test NumPy array.
 ## Usage
-
+This project is very useful for classification tasks and transfer learning, more specifically the classification of handwritten mathematical symbols and object detection of multiple symbols in an image. 
 ## Roadmap
 
 ## Contributing
+1. Fork the Project
+2. Create your Feature Branch ( ```git checkout -b feature/CoolFeature``` )
+3. Commit your Changes ( ```git commit -m 'Add some CoolFeature'``` )
+4. Push to the Branch ( ```git push origin feature/CoolFeature``` )
+5. Open a Pull Request
 
 ## License
 
 ## Authors
-Atayliya Irving
+Atayliya Irving - irvingatayliya@ufl.edu
 
-Catalina Murray
+Catalina Murray - catalinamurray@ufl.edu
 
-Justin Rossiter
+Justin Rossiter - justin.rossiter@ufl.edu
 
-Ceenu Shaji
+Ceenu Shaji - ceenushaji@ufl.edu
 
 ## Acknowledgements
 - Catia Silva
