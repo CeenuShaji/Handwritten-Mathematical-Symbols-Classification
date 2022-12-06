@@ -66,22 +66,19 @@ pip install scikit-image
 
 - YOLOv5
 
-### Installation
-1. Clone the repo
+### Installation and Running the Code
+1. Clone the final project repository
 ```
 git clone https://github.com/UF-EEL5840-F22/final-project---code-report-team-square-root.git
 ```
-2. Setup your environment
-## Usage
+2. Clone the YOLOv5 GitHub repository
+```
+git clone https://github.com/ultralytics/yolov5
+```
+3. Run train.ipynb to create the folder structure of training and validation data with corresponding bounding boxes, and generated NumPy arrays of testing data and its corresponding labels. Before doing so, specify in the Jupyter Notebook the preceeding path and folder name variables. By default it is set to output within /blue/eel5840/justin.rossiter/team_square_root
+4. If you changed the path in the previous step, change the path in eel5840.yaml to account for this.
+5. Move gpu_job_train.sh to within the yolov5/ GitHub repository directory. Move eel5840.yaml within the yolov5/data subfolder.
+6. Activate your environment in HiperGator and submit the SLURM script.
+7. When training is finished, the model can be found within yolov5/runs/train/exp#/weights, where # is the run number. Copy the trained model to the final project repository, or set the path within test.ipynb to account for this.
+8. Run test.ipynb to evaluate the model on the generated test NumPy array.
 
-## Roadmap
-
-## Contributing
-
-## License
-
-## Authors
-
-## Acknowledgements
-
-## Thank You
