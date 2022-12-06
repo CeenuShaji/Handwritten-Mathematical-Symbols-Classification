@@ -64,7 +64,7 @@ pip install -U scikit-learn
 pip install scikit-image
 ```
 
-- YOLOv5
+- List of YOLOv5 [dependencies](https://github.com/ultralytics/yolov5/blob/master/requirements.txt)
 
 ### Installation and Running the Code
 1. Clone the final project repository
