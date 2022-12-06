@@ -82,8 +82,11 @@ git clone https://github.com/UF-EEL5840-F22/final-project---code-report-team-squ
 
 ## Authors
 Atayliya Irving
+
 Catalina Murray
+
 Justin Rossiter
+
 Ceenu Shaji
 
 ## Acknowledgements
