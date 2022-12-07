@@ -78,7 +78,7 @@ git clone https://github.com/ultralytics/yolov5
 5. Move gpu_job_train.sh to within the yolov5/ GitHub repository directory. Move eel5840.yaml within the yolov5/data subfolder.
 6. Activate your environment in HiperGator and submit the SLURM script.
 7. When training is finished, the model can be found within yolov5/runs/train/exp#/weights, where # is the run number. Copy the trained model to the final project repository, or set the path within test.ipynb to account for this.
-8. Run test.ipynb to evaluate the model on the generated test NumPy array.
+8. Run test.ipynb to evaluate the model on the generated test NumPy array for single-symbol image datasets. Run test_hard.ipynb for multi-symbol image datasets.
 ## Usage
 This project is very useful for classification tasks and transfer learning, more specifically the classification of handwritten mathematical symbols and object detection of multiple symbols in an image. 
 ## Roadmap
