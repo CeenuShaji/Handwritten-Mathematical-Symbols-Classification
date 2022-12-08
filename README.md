@@ -81,7 +81,8 @@ git clone https://github.com/ultralytics/yolov5
 8. Run test.ipynb to evaluate the model on the generated test NumPy array for single-symbol image datasets. Run test_hard.ipynb for multi-symbol image datasets.
 ## Usage
 This project is very useful for classification tasks and transfer learning, more specifically the classification of handwritten mathematical symbols and object detection of multiple symbols in an image. 
-##Additional Dataset
+
+## Additional Dataset
 See https://drive.google.com/drive/folders/1dW1YtO_VpldcacN7S_g1_VjdP_QRS_k4?usp=sharing for dataset we created for evaluating multi-symbol classification.
 ## Roadmap
 
